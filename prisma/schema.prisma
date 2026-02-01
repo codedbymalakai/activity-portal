@@ -9,3 +9,12 @@ generator client {
 datasource db {
   provider = "sqlite"
 }
+
+model User {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  passwordHash String
+  locale       String   @default("en-GB")
+  currency     String   @default("GBP")
+  createdAt    DateTime @default(now())
+}
