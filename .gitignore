@@ -87,3 +87,5 @@ dist
 # Vite timestamp logs (in case you add Vite tooling later)
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+/app/generated/prisma
